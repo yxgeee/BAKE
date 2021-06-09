@@ -1,17 +1,22 @@
-# pycls
+# BAKE on ImageNet
 
-**pycls** is an image classification codebase, written in [PyTorch](https://pytorch.org/). It was originally developed for the [On Network Design Spaces for Visual Recognition](https://arxiv.org/abs/1905.13214) project. **pycls** has since matured and been adopted by a number of [projects](#projects) at Facebook AI Research.
+PyTorch implementation of [Self-distillation with Batch Knowledge Ensembling Improves ImageNet Classification](https://arxiv.org/abs/2104.13298) on ImageNet.
 
-<div align="center">
-  <img src="docs/regnetx_nets.png" width="550px" />
-  <p align="center"><b>pycls</b> provides a large set of baseline models across a wide range of flop regimes.</p>
-</div>
 
-## Introduction
+## Installation
 
-The goal of **pycls** is to provide a simple and flexible codebase for image classification. It is designed to support rapid implementation and evaluation of research ideas. **pycls** also provides a large collection of baseline results ([Model Zoo](MODEL_ZOO.md)).
+Install Python dependencies:
 
-The codebase supports efficient single-machine multi-gpu training, powered by the PyTorch distributed package, and provides implementations of standard models including [ResNet](https://arxiv.org/abs/1512.03385), [ResNeXt](https://arxiv.org/abs/1611.05431), [EfficientNet](https://arxiv.org/abs/1905.11946), and [RegNet](https://arxiv.org/abs/2003.13678).
+```
+pip install -r requirements.txt
+```
+
+Set up Python modules:
+
+```
+python setup.py develop --user
+```
+
 
 ## Using pycls
 

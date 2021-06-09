@@ -24,14 +24,20 @@ Please download the raw datasets and re-organize them according to [DATA](data/)
 
 ## BAKE Training
 
-`sh scripts/train_bake.sh <GPU_ID> <DATASET> <ARCH> <BATCH_SIZE> <M> <OMEGA>`
+```
+sh scripts/train_bake.sh <GPU_ID> <DATASET> <ARCH> <BATCH_SIZE> <M> <OMEGA>
+```
 
 Specifically,
 + CIFAR-100
 
-`sh scripts/train_bake.sh 0 cifar100 CIFAR_ResNet18 128 3 0.5`
+```
+sh scripts/train_bake.sh 0 cifar100 CIFAR_ResNet18 128 3 0.5
+```
 
-`sh scripts/train_bake.sh 0 cifar100 CIFAR_DenseNet121 128 3 0.5`
+```
+sh scripts/train_bake.sh 0 cifar100 CIFAR_DenseNet121 128 3 0.5
+```
 
 + TinyImageNet
 
