@@ -74,9 +74,17 @@ sh tools/dist_test.sh configs/resnet/BAKE-R-50-1x64d_dds_8gpu.yaml logs/resnet50
 
 ## Results
 
-|architecture|ImageNet top-1 acc.|config|url|
+|architecture|ImageNet top-1 acc.|config|download|
 |---|:--:|:--:|:--:|
 |ResNet-50|78.0|[config](configs/resnet/BAKE-R-50-1x64d_dds_8gpu.yaml)||
+|ResNet-101|79.3|[config](configs/resnet/BAKE-R-101-1x64d_dds_8gpu.yaml)||
+|ResNet-152|79.6|[config](configs/resnet/BAKE-R-152-1x64d_dds_8gpu.yaml)||
+|ResNeSt-50|79.4|[config](configs/resnest/BAKE-S-50_dds_8gpu.yaml)||
+|ResNeSt-101|80.4|[config](configs/resnest/BAKE-S-101_dds_8gpu.yaml)||
+|ResNeXt-101(32x4d)|79.3|[config](configs/resnext/BAKE-X-101-32x4d_dds_8gpu.yaml)||
+|ResNeXt-152(32x4d)|79.7|[config](configs/resnext/BAKE-X-152-32x4d_dds_8gpu.yaml)||
+|MobileNet-V2|72.0|[config](configs/mobilenet/BAKE-M-V2-W1_dds_4gpu.yaml)||
+|EfficientNet-B0|76.2|[config](configs/effnet/BAKE-EN-B0_dds_8gpu.yaml)||
 
 ## Thanks
 The code is modified from [pycls](https://github.com/facebookresearch/pycls).
