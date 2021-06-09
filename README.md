@@ -1,9 +1,15 @@
 # Self-distillation with Batch Knowledge Ensembling Improves ImageNet Classification
 
 
+<div align="center">
+  <img src="bake.png" width="300px" />
+</div>
+
+
 ## Updates
 
-[2021-06-08] The implementation of BAKE on small-scale datasets has been added, please refer to [small_scale](small_scale/). **The implementation on ImageNet will be added soon!**
+[2021-06-08] The implementation of BAKE on small-scale datasets has been added, please refer to [small_scale](small_scale/).
+[2021-06-09] The implementation of BAKE on ImageNet has been added, please refer to [imagenet](imagenet/).
 
 
 ## Citation
