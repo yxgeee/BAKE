@@ -76,7 +76,7 @@ sh tools/dist_test.sh configs/resnet/BAKE-R-50-1x64d_dds_8gpu.yaml logs/resnet50
 
 |architecture|ImageNet top-1 acc.|config|download|
 |---|:--:|:--:|:--:|
-|ResNet-50|78.0|[config](configs/resnet/BAKE-R-50-1x64d_dds_8gpu.yaml)||
+|ResNet-50|78.0|[config](configs/resnet/BAKE-R-50-1x64d_dds_8gpu.yaml)|https://drive.google.com/file/d/1RJeUxXLHnSc6m3iiaEslVN2hx3Vsbldc/view?usp=sharing|
 |ResNet-101|79.3|[config](configs/resnet/BAKE-R-101-1x64d_dds_8gpu.yaml)||
 |ResNet-152|79.6|[config](configs/resnet/BAKE-R-152-1x64d_dds_8gpu.yaml)||
 |ResNeSt-50|79.4|[config](configs/resnest/BAKE-S-50_dds_8gpu.yaml)||
