@@ -3,8 +3,8 @@
 set -x
 
 PARTITION=$1
-WORK_DIR=$2
-CKP=$3
+CONFIG=$2
+CKPT=$3
 PY_ARGS=${@:4}
 
 GPUS=${GPUS:-8}
@@ -28,9 +28,8 @@ srun --mpi=pmi2 -p ${PARTITION} \
     --cpus-per-task=${CPUS_PER_TASK} \
     --kill-on-bad-exit=1 \
     ${SRUN_ARGS} \
-    python -u tools/test_net.py --cfg ${WORK_DIR}/config.yaml \
-          TEST.WEIGHTS ${CKP} \
+    python -u tools/test_net.py --cfg ${CONFIG} \
+          TEST.WEIGHTS ${CKPT} \
           LAUNCHER slurm \
-          OUT_DIR ${WORK_DIR} \
           PORT ${PORT} \
           ${PY_ARGS}

@@ -372,7 +372,7 @@ _C.GPU = 0
 _C.NUM_GPUS = 1
 
 # Output directory
-_C.OUT_DIR = "/tmp"
+_C.OUT_DIR = "."
 
 # Config destination (in OUT_DIR)
 _C.CFG_DEST = "config.yaml"

@@ -4,8 +4,8 @@ set -x
 
 PYTHON=${PYTHON:-"python"}
 
-WORK_DIR=$1
-CKP=$2
+CONFIG=$1
+CKPT=$2
 PY_ARGS=${@:3}
 
 GPUS=${GPUS:-8}
@@ -20,9 +20,8 @@ do
 done
 
 $PYTHON -m torch.distributed.launch --nproc_per_node=$GPUS --master_port=$PORT --use_env \
-tools/test_net.py --cfg ${WORK_DIR}/config.yaml \
-      TEST.WEIGHTS ${CKP} \
-      LAUNCHER slurm \
-      OUT_DIR ${WORK_DIR} \
+tools/test_net.py --cfg ${CONFIG} \
+      TEST.WEIGHTS ${CKPT} \
+      LAUNCHER pytorch \
       PORT ${PORT} \
       ${PY_ARGS}
