@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <img src="bake.png" width="300px" />
+  <img src="bake.png" width="500px" />
 </div>
 
 
