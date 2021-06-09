@@ -6,7 +6,7 @@ N=$4
 
 if [ $# -ne 4 ]
     then
-        echo "Arguments error: <GPU_ID> <DATASET> <ARCH> <N>"
+        echo "Arguments error: <GPU_ID> <DATASET> <ARCH> <BATCH_SIZE>"
         exit 1
     fi
 

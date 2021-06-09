@@ -8,7 +8,7 @@ OMEGA=$6
 
 if [ $# -ne 6 ]
     then
-        echo "Arguments error: <GPU_ID> <DATASET> <ARCH> <N> <M> <OMEGA>"
+        echo "Arguments error: <GPU_ID> <DATASET> <ARCH> <BATCH_SIZE> <M> <OMEGA>"
         exit 1
     fi
 
