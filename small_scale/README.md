@@ -33,43 +33,48 @@ Specifically,
 
 ```
 sh scripts/train_bake.sh 0 cifar100 CIFAR_ResNet18 128 3 0.5
-```
-
-```
 sh scripts/train_bake.sh 0 cifar100 CIFAR_DenseNet121 128 3 0.5
 ```
 
 + TinyImageNet
 
-`sh scripts/train_bake.sh 0 tinyimagenet CIFAR_ResNet18 128 1 0.9`
-
-`sh scripts/train_bake.sh 0 tinyimagenet CIFAR_DenseNet121 128 1 0.9`
+```
+sh scripts/train_bake.sh 0 tinyimagenet CIFAR_ResNet18 128 1 0.9
+sh scripts/train_bake.sh 0 tinyimagenet CIFAR_DenseNet121 128 1 0.9
+```
 
 + CUB-200-2011
 
-`sh scripts/train_bake.sh 0 CUB200 resnet18 32 3 0.5`
-
-`sh scripts/train_bake.sh 0 CUB200 densenet121 32 3 0.5`
+```
+sh scripts/train_bake.sh 0 CUB200 resnet18 32 3 0.5
+sh scripts/train_bake.sh 0 CUB200 densenet121 32 3 0.5
+```
 
 + Stanford Dogs
 
-`sh scripts/train_bake.sh 0 STANFORD120 resnet18 32 1 0.9`
-
-`sh scripts/train_bake.sh 0 STANFORD120 densenet121 32 1 0.9`
+```
+sh scripts/train_bake.sh 0 STANFORD120 resnet18 32 1 0.9
+sh scripts/train_bake.sh 0 STANFORD120 densenet121 32 1 0.9
+```
 
 + MIT67
 
-`sh scripts/train_bake.sh 0 MIT67 resnet18 32 1 0.9`
-
-`sh scripts/train_bake.sh 0 MIT67 densenet121 32 1 0.9`
+```
+sh scripts/train_bake.sh 0 MIT67 resnet18 32 1 0.9
+sh scripts/train_bake.sh 0 MIT67 densenet121 32 1 0.9
+```
 
 ## Baseline Training
 
-`sh scripts/train_baseline.sh <GPU_ID> <DATASET> <ARCH> <BATCH_SIZE>`
+```
+sh scripts/train_baseline.sh <GPU_ID> <DATASET> <ARCH> <BATCH_SIZE>
+```
 
 ## Validation
 
-`sh scripts/val.sh <GPU_ID> <DATASET> <ARCH> <CKPT>`
+```
+sh scripts/val.sh <GPU_ID> <DATASET> <ARCH> <CKPT>
+```
 
 ## Results (top-1 error)
 
